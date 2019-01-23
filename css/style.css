@@ -47,16 +47,13 @@ i {
   font-size: 60px; }
 
 .contact {
-  height: 600px;
-  grid-column: full;
-  justify-items: center;
+  grid-column: col-start 3 / col-end 7;
   display: grid;
-  width: 100%; }
+  align-items: center;
+  margin: 3rem; }
   .contact__form {
     background-color: #EFA747;
-    justify-content: center;
-    align-items: center;
-    margin: auto; }
+    padding: 100px; }
   .contact__input {
     background-color: transparent;
     border-radius: 4px;
@@ -65,8 +62,9 @@ i {
     display: block;
     outline: 0;
     text-decoration: none;
-    width: 100%;
-    height: 4rem; }
+    height: 4rem;
+    margin: 20px;
+    padding: 20px; }
   .contact__textarea {
     background-color: transparent;
     border-radius: 4px;
@@ -87,15 +85,16 @@ i {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
-    border: none; }
+    box-sizing: border-box; }
   .contact input[type=text]:focus {
     border: 4px solid #555;
     background-color: white; }
+  .contact textarea[type=text]:focus {
+    border: 4px solid #555;
+    background-color: white; }
   .contact__btn {
-    background-color: #36688D;
+    background-color: #A4978E;
     color: white;
-    border: solid 2px #36688D;
     padding: 1.2rem 5rem;
     font-size: 1.8rem;
     font-family: "Playfair Display", serif;

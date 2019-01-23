@@ -1,15 +1,12 @@
 .contact {
-    height:600px;
-    grid-column: full;
-    justify-items: center;
+    grid-column: col-start 3 / col-end 7;
     display:grid;
-    width:100%;
+    align-items:center;
+    margin:3rem;
 
     &__form {
         background-color: $color-orange; 
-        justify-content: center;
-        align-items:center;
-        margin:auto;
+        padding:100px;
     }
 
     &__input {
@@ -20,8 +17,9 @@
         display: block;
         outline: 0;
         text-decoration: none;
-        width: 100%;
         height: 4rem;
+        margin:20px;
+        padding:20px;
     }
 
     &__textarea {
@@ -49,7 +47,6 @@
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
-        border: none;
     }
     
     input[type=text]:focus {
@@ -57,10 +54,14 @@
         background-color:white;
     }
 
+    textarea[type=text]:focus {
+        border: 4px solid #555;
+        background-color:white;
+    }
+
     &__btn {
-        background-color: $color-blue;
+        background-color: $color-tan;
         color: $color-white;
-        border: solid 2px $color-blue;
         padding: 1.2rem 5rem;
         font-size:1.8rem;
         font-family: $font-display;
