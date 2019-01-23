@@ -43,15 +43,20 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
+i {
+  font-size: 60px; }
+
 .contact {
   height: 600px;
   grid-column: full;
   justify-items: center;
-  display: grid; }
+  display: grid;
+  width: 100%; }
   .contact__form {
     background-color: #EFA747;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: auto; }
   .contact__input {
     background-color: transparent;
     border-radius: 4px;
@@ -229,21 +234,19 @@ label {
       padding: 5rem; } }
 
 .packages {
-  grid-column: center-start / center-end;
-  margin: 15rem 0;
+  grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem; }
+  grid-gap: 6rem;
+  align-items: start;
+  padding: 5rem; }
 
 .package {
   display: grid;
-  grid-column-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
-  .package__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
+  padding: 7rem;
+  margin: 2rem; }
   .package__one {
-    background-color: #040C0E;
+    background-color: #A4978E;
     display: grid;
     justify-content: center; }
   .package__two {
@@ -255,17 +258,17 @@ label {
     background-color: #525B56;
     display: grid;
     justify-content: center; }
-  .package__btn {
+  .package__btngroup {
     background-color: transparent;
     color: white;
     border: solid 2px #36688D;
     padding: 1.2rem 2.5rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem;
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
     text-decoration: none; }
-    .package__btn:hover {
+    .package__btngroup:hover {
       cursor: pointer;
       color: #040C0E;
       background-color: #36688D; }
@@ -291,10 +294,6 @@ label {
       -webkit-transform: translate(-50%, 0px);
       width: 70px;
       z-index: 999; }
-
-.projects {
-  grid-column: full;
-  background-color: orangered; }
 
 .navigation {
   grid-column: 1 / -1; }
@@ -398,7 +397,6 @@ label {
 
 .services {
   grid-column: center-start / center-end;
-  grid-template-rows: min-content;
   display: grid;
   margin: 15rem 0; }
   @supports (display: grid) {

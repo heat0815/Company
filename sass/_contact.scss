@@ -3,12 +3,12 @@
     grid-column: full;
     justify-items: center;
     display:grid;
+    width:100%;
 
     &__form {
         background-color: $color-orange; 
         justify-content: center;
         align-items:center;
-        max-width:600px;
         margin:auto;
     }
 
