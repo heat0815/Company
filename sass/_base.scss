@@ -1,0 +1,67 @@
+// BASE COLORS
+$white: rgba(255,255,255,1);
+$color-white: rgba(255,255,255,1);
+$black:rgba(0,0,0,1);
+$color-dark:#040C0E;
+$color-black:#040C0E;
+$color-blue: #36688D;
+$color-green: #525B56;
+$color-darkorange:#BE9063;
+$color-orange: #EFA747;
+$color-tan:#A4978E;
+
+// BG COLORS
+$trans: transparent;
+$color-bg-primary: rgba(21,23,27,1);
+$color-bg-secondary: rgba(73, 77, 84, 1);
+
+// FONT VARIABLES
+$font-display:'Playfair Display', serif;
+$font-primary:'Montserrat Regular', sans-serif;
+$font-secondary:'Archivo Narrow', sans-serif;
+$font-three:'Eczar', serif;
+
+// BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;                        
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    color: $color-white;
+    font-family: $font-primary;
+    background-color: $color-blue;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 100vh 40vw repeat(2, min-content) auto repeat(2, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.mb-sm { margin-bottom: 2rem; }
+.mb-md { margin-bottom: 3rem; }
+.mb-lg { margin-bottom: 4rem; }
+.mb-hg { margin-bottom: 8rem; }
