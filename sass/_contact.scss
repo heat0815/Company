@@ -8,6 +8,8 @@
         background-color: $color-orange; 
         justify-content: center;
         align-items:center;
+        max-width:600px;
+        margin:auto;
     }
 
     &__input {
